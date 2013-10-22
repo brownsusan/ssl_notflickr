@@ -3,38 +3,40 @@
 	class photosModel{
 
 		public function readPhoto(){
-			$db = new PDO("mysql:hostname=localhost;dbname=database_ssl_1310","root","root");
-			$st = $db->prepare("select * from albums order by photoId desc");
+            $db = new PDO("mysql:hostname=localhost;dbname=notFlickr","root","root");
+			$st = $db->prepare("select * from images order by imageID desc");
 			$st->execute();
 			$obj = $st->fetchAll();
 			return $obj;
 		}
 
-		public function readPhotoInfo($photoId){
-			$db = new PDO("mysql:hostname=localhost;dbname=database_ssl_1310","root","root");
-			$sql = "select * from albums where photoId = :photoId";
+		public function readPhotoInfo($imageID){
+            $db = new PDO("mysql:hostname=localhost;dbname=notFlickr","root","root");
+			$sql = "select * from images where imageID = :imageID";
 			$st = $db->prepare($sql);
-			$st->execute(array(":photoId"=>$photoId));
+			$st->execute(array(":imgID"=>$imageID));
 			$obj = $st->fetchAll();
 			return $obj;
 		}
 
-		public function updatePhoto($photoId, $formInputs){
-			$db = new PDO("mysql:hostname=localhost;dbname=database_ssl_1310","root","root");
-			$sql = "update albums set albumName = :albumName";
+		public function updatePhoto($file_desc, $imageID){
+            $db = new PDO("mysql:hostname=localhost;dbname=notFlickr","root","root");
+            $sql = "update images
+                    set file_desc = :file_desc
+                    where imageID = :imageID";
 			$st = $db->prepare($sql);
-			$st->execute(array(":photoId"=>$photoId));
+			$st->execute(array(":file_desc"=>$file_desc,":imgID"=>$imageID));
 		}
 
-		public function deletePhoto($photoId){
-			$db = new PDO("mysql:hostname=localhost;dbname=database_ssl_1310","root","root");
-			$sql = "delete from albums where photoId = :photoId";
+		public function deletePhoto($imageID){
+            $db = new PDO("mysql:hostname=localhost;dbname=notFlickr","root","root");
+			$sql = "delete from images where imageID = :imageID";
 			$st = $db->prepare($sql);
-			$st->execute(array(":photoId"=>$photoId));
+			$st->execute(array(":imageID"=>$imageID));
 		}
 
 		public function createPhoto($data){
-			$db = new PDO("mysql:hostname=localhost;dbname=database_ssl_1310","root","root");
+            $db = new PDO("mysql:hostname=localhost;dbname=notFlickr","root","root");
 			$sql = "insert into  ()";
 			$st = $db->prepare($sql);
 			$st->execute(array(':'=>$data['']));

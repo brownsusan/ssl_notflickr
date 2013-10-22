@@ -22,12 +22,15 @@ if (isset($_GET['action'])) {
 
 if ($action == "") {
 	require 'controllers/main.php';
+}if($action == "action_user_create"){
+
+    echo "testing";
+
 } else {
 
-	if (file_exists('controllers/' . $action . '.php')) {
-		require 'controllers/' . $action . '.php';
+	if (file_exists('../controllers/' . $action . '.php')) {
+		require '../controllers/' . $action . '.php';
 	} else {
-		require 'controllers/error_404.php';
+		require '../controllers/error_404.php';
 	}
-
 }
