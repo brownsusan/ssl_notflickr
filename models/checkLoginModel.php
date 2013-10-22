@@ -2,11 +2,11 @@
 	class ckUser{
 		public function checkUser($data){
 			session_start();
-			$db = new PDO("mysql:hostname=localhost;dbname=database_ssl_1310","root","root");
+			$db = new PDO("mysql:hostname=localhost;dbname=notFlickr","root","root");
 
-			$q = "select user_name, user_password
+			$q = "select log_usern, log_pass
 				  from users
-				  where user_name = :un and user_password = :pass";
+				  where log_usern = :un and log_pass = :pass";
 
 			$st = $db->prepare($q);
 
