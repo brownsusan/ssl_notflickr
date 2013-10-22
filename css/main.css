@@ -22,6 +22,10 @@ header {
 	border-bottom: 1px solid #777;
 }
 
+#app-header{
+	display: inline-block;
+}
+
 /* this is to push down the content behind the fixed header */
 #header_placeholder {
 	height: 40px;

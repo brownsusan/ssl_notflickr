@@ -29,10 +29,17 @@ if ($action == "") {
 
 } else {
 
+<<<<<<< HEAD
+	if (file_exists('ssl_notflickr/controllers/' . $action . '.php')) {
+		require 'controllers/' . $action . '.php';
+	} else {
+		require 'controllers/error_404.php';
+=======
 	if (file_exists('controllers/' . $_GET['action'] . '.php')) {
 		require 'controllers/' . $_GET['action'] . '.php';
 	} else {
 		echo 'controllers/' . $action . '.php does not exist';
 		//require '/controllers/error_404.php';
+>>>>>>> 19994d05c512903161777dfcc4df885b022fc769
 	}
 }
