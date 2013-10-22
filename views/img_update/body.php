@@ -1,7 +1,8 @@
-<div>
-	<div><!-- HOLD IMAGE --></div>
-	<input type="text" value=""><!-- HOLD IMAGE TITLE -->
-	<input type="textarea" value=""><!-- HOLD IMAGE DESC -->
-	<a><!-- HOLD IMAGE SAVE --></a>
-	<a><!-- HOLD IMAGE DELETE --></a>
+<div id="img_update">
+	<div id="img"><!-- HOLD IMAGE --></div><br>
+	<input type="text" value="HOLD IMAGE TITLE"><br>
+	<textarea>HOLD IMAGE DESC</textarea><br>
+	<!-- 	SET ACTIONS IN THE ANCHORS -->
+	<a href="#">SAVE</a><br>
+	<a href="#">DELETE</a><br>
 </div>
