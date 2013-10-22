@@ -28,9 +28,13 @@ if ($action == "") {
 
 } else {
 
-	if (file_exists('../controllers/' . $action . '.php')) {
-		require '../controllers/' . $action . '.php';
+	if (file_exists('ssl_notflickr/controllers/' . $action . '.php')) {
+		require '/controllers/' . $action . '.php';
 	} else {
+<<<<<<< HEAD
 		//require '../controllers/error_404.php';
+=======
+		require '/controllers/error_404.php';
+>>>>>>> 5f7b3f724899325e4fc97d8b28d420b8383374ab
 	}
 }
