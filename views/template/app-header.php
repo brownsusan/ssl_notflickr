@@ -20,9 +20,9 @@
 		<div id="header_placeholder"></div>
 		
 		<header>
-			<a id="logo" href="<?php echo $GLOBALS['web_root']; ?>">Not Flickr</a>
-			<div class="app-header">
-				<!-- <span><?php echo($_SESSION["user"]["username"])?></span> -->
-				<a href="<?php echo $GLOBALS['web_root']; ?>?action=logout">log out</a>
-			</div>
+			
+			<a id="logo" href="<?php echo $GLOBALS['web_root']; ?>?action=photos">Not Flickr</a>
+			<a href="<?php echo $GLOBALS['web_root']; ?>?action=action_logout">log out</a>
+			<a href="<?php echo $GLOBALS['web_root']; ?>?action=photo_upload">Upload Photo</a>
+			<!-- <span><?php echo($_SESSION["user"]["username"])?></span> -->
 		</header>

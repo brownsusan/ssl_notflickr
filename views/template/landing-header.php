@@ -24,7 +24,7 @@
 			<a id="logo" href="?action=notes">Not Flicker</a>
 			
 <!-- 			TODO CHANGE THE HREF TO REPRESENT THE CONTROLLER THAT HANDLES THE LOGGING IN -->
-		<form action="?action=submitLogin" method="post" class="home-login" name="home-login">
+		<form action="?action=action_login" method="post" class="home-login" name="home-login">
 			<input name="username" id="loginEmail" placeholder="Username"/>
 			<input name="password" type="password" id="loginPass" placeholder="Password"/>
 			<input type="submit" value="log in" />
