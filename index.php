@@ -10,7 +10,7 @@ $validate = new validationModel();
 $logins = new ckUser();
 $userModel = new usersModel();
 
-$GLOBALS['web_root'] = '/';
+$GLOBALS['web_root'] = '/ssl_notflickr/';
 
 if (isset($_GET['action'])) {
 	$action = $_GET['action'];

@@ -24,7 +24,7 @@
 			<a id="logo" href="<?php echo $GLOBALS['web_root']; ?>?action=notes">Not Flicker</a>
 			
 <!-- 			TODO CHANGE THE HREF TO REPRESENT THE CONTROLLER THAT HANDLES THE LOGGING IN -->
-		<form action="<?php echo $GLOBALS['web_root']; ?>?action=action_user_login" method="post" class="home-login" name="home-login">
+		<form action="<?php echo $GLOBALS['web_root']; ?>?action=submitLogin" method="post" class="home-login" name="home-login">
 			<input name="email" id="loginEmail" placeholder="Username"/>
 			<input name="password" type="password" id="loginPass" placeholder="Password"/>
 			<input type="submit" value="log in" />
