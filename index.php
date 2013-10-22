@@ -3,14 +3,14 @@
 require_once 'models/viewModel.php';
 require_once 'models/validationModel.php';
 require_once 'models/usersModel.php';
-require_once 'models/checklogin.php';
+require_once 'models/checkLoginModel.php';
 
 $viewModel = new viewModel();
 $validate = new validationModel();
 $logins = new ckUser();
 $userModel = new usersModel();
 
-$GLOBALS['web_root'] = '/Day3/';
+$GLOBALS['web_root'] = '/';
 
 if (isset($_GET['action'])) {
 	$action = $_GET['action'];
