@@ -1,4 +1,5 @@
 <?
+session_start();
 
 require_once 'models/viewModel.php';
 require_once 'models/validationModel.php';

@@ -9,7 +9,7 @@ $msg="Invalid Login";
 if($test == 1){
 
 	$viewModel->getView("views/template/app-header.php");
-	$viewModel->getView("views/browse/body.php");
+	$viewModel->getView("views/img_create/upload.php");
 	$viewModel->getView("views/template/foot.php");
 
 }else{	

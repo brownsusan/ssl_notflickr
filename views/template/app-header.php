@@ -23,6 +23,6 @@
 			<a id="logo" href="<?php echo $GLOBALS['web_root']; ?>">Not Flickr</a>
 			<div class="app-header">
 				<!-- <span><?php echo($_SESSION["user"]["username"])?></span> -->
-				<a href="<?php echo $GLOBALS['web_root']; ?>?action=action_user_logout">log out</a>
+				<a href="<?php echo $GLOBALS['web_root']; ?>?action=logout">log out</a>
 			</div>
 		</header>
