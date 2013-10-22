@@ -13,7 +13,7 @@
 		// we must load the css from the root (/) because
 		//relative paths don't work with pretty urls and a shared header file'
 		?>
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		
@@ -21,10 +21,10 @@
 		
 		<header>
 <!-- 			TODO CHANGE THE HREF TO REPRESENT THE CONTROLLER THAT HANDLES THE UPLOAD/HOME PAGE -->
-			<a id="logo" href="<?php echo $GLOBALS['web_root']; ?>?action=notes">Not Flicker</a>
+			<a id="logo" href="?action=notes">Not Flicker</a>
 			
 <!-- 			TODO CHANGE THE HREF TO REPRESENT THE CONTROLLER THAT HANDLES THE LOGGING IN -->
-		<form action="<?php echo $GLOBALS['web_root']; ?>?action=submitLogin" method="post" class="home-login" name="home-login">
+		<form action="?action=submitLogin" method="post" class="home-login" name="home-login">
 			<input name="username" id="loginEmail" placeholder="Username"/>
 			<input name="password" type="password" id="loginPass" placeholder="Password"/>
 			<input type="submit" value="log in" />
