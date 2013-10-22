@@ -5,4 +5,6 @@ $pass = $_POST["password"];
 
 $result = $validate -> validateLogin($em, $pass);
 
-echo $result;
+if($result == true){
+	require 'controllers/checklogin.php';
+}

@@ -25,7 +25,6 @@
 
 				$_session["logggedin"] = 0;
 				return 0;
-
 			}
 		}
 	}
