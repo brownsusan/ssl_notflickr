@@ -1,0 +1,57 @@
+body {
+	margin: 0 auto;
+	font-family: helvetica;
+	background: #ebebeb;
+}
+
+
+header {
+	height: 40px;
+	width: 100%;
+	background: rgba(290, 290, 290, 1);
+	line-height: 40px;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid #777;
+}
+
+/* this is to push down the content behind the fixed header */
+#header_placeholder {
+	height: 40px;
+	width: 100%;
+}
+
+.home-login {
+	float: right;
+	width: 25%;
+}
+
+#logo{
+	display: inline-block;
+	height: 40px;
+	width: 125px;
+	margin: 0;
+	margin-left: 1%;
+}
+
+#signup{
+	padding: 20px;
+	width: 25%;
+	background: #999;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#signup label{
+	display: inline-block;
+	width: 150px;
+}
+
+#signup input{
+	width: 200px;
+}
+
+
