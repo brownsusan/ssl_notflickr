@@ -3,6 +3,6 @@
 $em = $_POST["username_login"];
 $pass = $_POST["password_login"];
 
-$result = $validate -> getLogin($em, $pass);
+$result = $validate -> validateLogin($em, $pass);
 
 echo $result;
