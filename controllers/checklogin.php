@@ -1,6 +1,6 @@
 <?php
 
-$data = array("un"=>$_POST["username_login"],"pass"=>md5($_POST["password_login"]));
+$data = array("un"=>$_POST["username"],"pass"=>md5($_POST["password"]));
 $test = $logins->checkUser($data);
 $msg="Invalid Login";
 

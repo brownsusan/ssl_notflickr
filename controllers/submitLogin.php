@@ -1,7 +1,7 @@
 <?php
 
-$em = $_POST["username_login"];
-$pass = $_POST["password_login"];
+$em = $_POST["username"];
+$pass = $_POST["password"];
 
 $result = $validate -> validateLogin($em, $pass);
 
