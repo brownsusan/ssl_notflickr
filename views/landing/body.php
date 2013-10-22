@@ -4,7 +4,7 @@
 
 ?>
 <div id="hero">
-	
+	<span>CTA</span>
 </div>
 
 
