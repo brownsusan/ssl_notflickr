@@ -2,12 +2,11 @@
 
 class validationModel{
 	
-	public function validateLogin(){
+	public function validateLogin($em, $pass){
 		//$loginErr = "";
-		$username = $_POST["username"];
-		$password = $_POST["password"];
+		$username = $em;
+		$password = $pass;
 		$password_match = '/^[a-zA-Z]\w{7,14}$/';
-		
 		
 		if(preg_match($password_match, $password)){
 			return true;
@@ -16,6 +15,7 @@ class validationModel{
 			return false;
 			
 		}	
+
 	}
 }
 

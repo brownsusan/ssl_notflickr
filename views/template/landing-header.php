@@ -25,7 +25,7 @@
 			
 <!-- 			TODO CHANGE THE HREF TO REPRESENT THE CONTROLLER THAT HANDLES THE LOGGING IN -->
 		<form action="<?php echo $GLOBALS['web_root']; ?>?action=submitLogin" method="post" class="home-login" name="home-login">
-			<input name="email" id="loginEmail" placeholder="Username"/>
+			<input name="username" id="loginEmail" placeholder="Username"/>
 			<input name="password" type="password" id="loginPass" placeholder="Password"/>
 			<input type="submit" value="log in" />
 		</form>
