@@ -54,12 +54,24 @@ header {
 	width: 200px;
 }
 
+#hero{
+	width: 50%;
+	background: #555;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
 
 
 
 /* IMG DETAILS */
 
 #img_details{
-	background: red;
+	background: #999;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 20px;
 }
 
