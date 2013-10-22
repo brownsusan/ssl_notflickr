@@ -6,7 +6,7 @@ require_once 'models/usersModel.php';
 require_once 'models/checkLoginModel.php';
 
 $viewModel = new viewModel();
-//$validate = new validationModel();
+$validate = new validationModel();
 $logins = new ckUser();
 $userModel = new usersModel();
 
